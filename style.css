@@ -1,0 +1,228 @@
+
+@font-face {
+    font-family: Barlow;
+    src: url("/fonts/BarlowCondensed-Italic.otf") format("opentype");
+}
+
+body{
+    font-family: Barlow, sans-serif;
+    background: #EFF6FF;
+    color: #2A4A5C;
+}
+.wrapper{
+    display: flex;
+}
+.wrapper__left{
+    background-image: url("/img/bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 50%;
+    min-height: 100vh;
+}
+.wrapper__right{
+    width: 50%;
+    margin: 100px 50px;
+}
+.wrapper__form{
+    max-width: 600px;
+    margin: 0 auto;
+}
+.logo svg{
+    width: 150px;
+    height: 150px;
+}
+.logo{
+    margin-left: 50px;
+}
+.wrapper__form__social img {
+    width: 15px;
+    height: 15px;
+}
+.wrapper__form__title{
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+.wrapper__form__text{
+    margin-bottom: 50px;
+}
+.wrapper__form__social{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+}
+.wrapper__form__social__btn{
+    display: flex;
+    gap: 15px;
+    min-width: 230px;
+    background: #0076B6;
+    font-size: 15px;
+    padding: 15px 20px;
+}
+.wrapper__form__social__btn a{
+    text-decoration: none;
+    color: #f0f1f3;;
+}
+.wrapper__form__social__btn.fb{
+    background: #255A9B;
+}
+.wrapper__form__social__btn img {
+    margin-right: 5px;
+}
+.wrapper__form__social__or{
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 18px;
+}
+.wrapper__form__social__or span{
+    display: inline-block;
+    vertical-align: middle;
+}
+.wrapper__form__social__or:after,.wrapper__form__social__or:before{
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    height: 1px;
+    background: #e4e4e4;
+    position: relative;
+}
+.wrapper__form__social__or:before{
+    width: 150px;
+    margin-left: -1%;
+    left: -5px;
+}
+.wrapper__form__social__or:after{
+    width: 150px;
+    margin-right: -1%;
+    right: -5px;
+}
+.wrapper__form__inputs{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+}
+.wrapper__form__input label{
+    color: #9ca6b0;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #e4e4e4;
+    padding: 5px 10px;
+    -moz-border-radius-topright: 5px;
+    -webkit-border-top-right-radius: 5px;
+}
+.wrapper__form__input label input{
+    background: #EFF6FF;
+    box-sizing: border-box;
+    min-width: 250px;
+    height: 100%;
+    border: 0;
+    margin-top: 10px;
+}
+.wrapper__form__input label input:focus{
+   outline: none;
+}
+.wrapper__form__input:has(label input:focus){
+    border-left: #3698FB 2px solid;
+}
+.wrapper__form__checks__title{
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+.wrapper__form__checks__text{
+    margin-bottom: 50px;
+}
+.checks{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+.check input {
+    width: 1.3em;
+    height: 1.3em;
+    background-color: #EFF6FF;
+    border-radius: 50%;
+    vertical-align: middle;
+    border: 1px solid #ddd;
+    appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+    cursor: pointer;
+}
+.check input:checked {
+    border: #3596f6 5px solid;
+}
+
+.check__text{
+    color: #96A5B1;
+    margin-bottom: 50px;
+    border: 1px #eee solid;
+    width: 60%;
+    padding: 15px;
+    line-height: 1.5em;
+    box-shadow: rgba(203, 128, 128, 0.18) 1px 2px 3px;
+}
+.wrapper__form__privacy{
+    margin-bottom: 50px;
+    line-height: 1.5em;
+    color: #96A5B1;
+}
+.wrapper__form__privacy a{
+    color: #3697f9;
+}
+.wrapper__form__privacy label input{
+    background:#EFF6FF ;
+}
+
+.wrapper__form__submit button{
+    border: none;
+    padding: 10px 15%;
+    color: white;
+    background: #3697f9;
+    border-radius:5px;
+}
+
+@media (max-width: 1202px) {
+    .wrapper__form__social__btn{
+        min-width: 200px;
+    }
+    .wrapper__form__input label input{
+        min-width: 220px;
+    }
+}
+@media (max-width: 1084px) {
+    .wrapper__form__social__btn{
+        min-width: 150px;
+    }
+    .wrapper__form__input label input{
+        min-width: 170px;
+    }
+}
+@media (max-width: 997px) {
+    .wrapper__form__social{
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+    .wrapper__form__input label input{
+        min-width: 200px;
+    }
+    .wrapper__form__inputs{
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+    .wrapper__form__social__or:before{
+        width: 70px;
+    }
+    .wrapper__form__social__or:after{
+        width: 70px;
+   }
+    .checks{
+        justify-content: space-between;
+        gap:10px;
+    }
+}
