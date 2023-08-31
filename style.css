@@ -1,7 +1,7 @@
 
 @font-face {
     font-family: Barlow;
-    src: url("/fonts/BarlowCondensed-Italic.otf") format("opentype");
+    src: url("https://ushajindi.github.io/webcore_kata/fonts/BarlowCondensed-Italic.otf") format("opentype");
 }
 
 body{
@@ -13,7 +13,7 @@ body{
     display: flex;
 }
 .wrapper__left{
-    background-image: url("/img/bg.jpg");
+    background-image: url("https://ushajindi.github.io/webcore_kata/img/bg.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     width: 50%;
